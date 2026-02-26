@@ -2,7 +2,7 @@ const path = require('path');
 
 // Конфигурация базы данных
 const dbConfig = {
-  database: path.resolve(__dirname, '../database.sqlite'),
+  database: path.resolve(__dirname, './database.sqlite'),
   dialect: 'sqlite',
 };
 

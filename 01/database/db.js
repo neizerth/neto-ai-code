@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const dbConfig = require('./config/db');
+const dbConfig = require('./config');
 
 // Подключаемся к базе данных SQLite
 const db = new sqlite3.Database(dbConfig.database);
