@@ -1,0 +1,41 @@
+описание материалов в папке links
+
+01 - google.github.io/eng-practices/review/
+02 - https://github.com/palantir/gradle-baseline/blob/develop/docs/best-practices/code-reviews/readme.md
+03 - https://github.com/palantir/gradle-baseline/tree/develop/docs/best-practices/testing-software
+04 - https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+05 - https://www.qiminfo.ch/en/clean-code-by-benoit
+06 - https://learn.microsoft.com/el-gr/visualstudio/code-quality/code-metrics-values?view=vs-2022
+
+07 https://diffray.ai/blog/llm-hallucinations-code-review/
+08 https://github.blog/ai-and-ml/github-copilot/how-github-copilot-is-getting-better-at-understanding-your-code/
+09 https://owasp.org/www-project-top-10-for-large-language-model-applications/
+10 https://cloud.ru/blog/chto-takoye-code-review
+11 https://habr.com/ru/articles/940318/
+12 https://pro-blockchain.com/kak-vnedrit-avtomaticheskoye-rev-yu-koda-s-pomoshch-yu-ii-opyt-microsoft-google-i-bytedance-prakticheskoye-rukovodstvo
+13 https://habr.com/ru/articles/951434/
+14 https://habr.com/ru/companies/fix_price/articles/963658/
+15 https://habr.com/ru/companies/mvideo/articles/952668/
+16 https://pikabu.ru/story/llmkoding_i_code_review_novaya_distsiplina_v_razrabotke_po_12931052
+папка /code-Smells
+17 https://elbrusboot.camp/blog/ai-rieviu-koda-za-10-siekund-5-siekrietov-uskorieniia-tsikla-razrabotki/
+18 https://cpb-runo.ru/news/programming/code-review-s-ii-naskolko-mozhno-doveryat-assistentu/
+19 https://www.getpanto.ai/blog/best-code-smell-detection-tools-to-optimize-code-quality
+20 https://owasp.org/www-project-code-review-guide/
+21 https://owasp.org/www-project-application-security-verification-standard/
+22 https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html
+23 https://blog.doubleslash.de/en/software-technologien/software-quality-management/pull-request-reviews-how-ki-improves-code-quality-and-saves-time/
+24 https://www.codeant.ai/blogs/owasp-code-review-guide-explained
+25 https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html
+26 https://www.dreyfus.fr/en/2025/08/13/ownership-of-ai-generated-content-a-challenge-for-copyright-law/
+27 https://www.computerlaw.com/blog/2025/01/ai-generated-code-and-intellectual-property-protection/
+
+01 - https://refactoring.guru/ru/refactoring/smells
+02- https://refactoring.guru/ru/refactoring/smells/bloaters
+03 https://refactoring.guru/ru/refactoring/smells/oo-abusers
+04 https://refactoring.guru/ru/refactoring/smells/change-preventers
+05 https://refactoring.guru/ru/refactoring/smells/dispensables
+06 https://refactoring.guru/ru/refactoring/smells/couplers
+
+
+

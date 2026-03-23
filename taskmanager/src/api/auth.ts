@@ -1,4 +1,5 @@
 import { apiRequest } from "./client";
+import { RegisterRequest, UserResponse } from "../types/auth";
 
 export interface LoginCredentials {
   email: string;
@@ -17,7 +18,9 @@ export async function loginUser(credentials: LoginCredentials): Promise<LoginRes
   });
 }
 
-// TODO: Реализовать registerUser для POST /api/auth/register
-// Request: { email: string, password: string }
-// Response 201: { id: number, email: string, createdAt: string }
-// При 409 (email занят) — показать ошибку в форме
+export async function registerUser(credentials: RegisterRequest): Promise<UserResponse> {
+  return apiRequest<UserResponse>("/auth/register", {
+    method: "POST",
+    body: JSON.stringify(credentials),
+  });
+}

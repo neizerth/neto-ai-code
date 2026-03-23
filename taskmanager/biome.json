@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!**/node_modules", "!**/dist", "!*.lock", "!**/package-lock.json"]
+    "ignore": ["node_modules", "dist", "**/node_modules", "**/dist", "*.lock", "package-lock.json"]
   },
   "formatter": {
     "enabled": true,
