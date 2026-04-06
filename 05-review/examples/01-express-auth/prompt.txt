@@ -1,4 +1,3 @@
-Ты — code reviewer по Node.js/Express с фокусом на безопасность.
 
 Проведи ревью файла src/auth.ts.
 Проверь:

@@ -1,0 +1,105 @@
+Материалы для лонгрида
+«Интерфейсы для LLM: инструменты и структура UI»
+
+Формат: ссылка + что из неё можно взять в текст.
+
+---
+
+1) Назначение интерфейсов в разработке с LLM (демо, внутренние утилиты, проверка сценария)
+
+01. Cloud.ru — что такое code review (как пример внутреннего процесса и “зачем нужны интерфейсы для ускорения обратной связи”)
+https://cloud.ru/blog/chto-takoye-code-review
+
+02. GitHub Blog — как Copilot лучше понимает контекст кода (про “почему UI важен для контекста: файлы, требования, сценарии”)
+https://github.blog/ai-and-ml/github-copilot/how-github-copilot-is-getting-better-at-understanding-your-code/
+
+---
+
+2) Streamlit и Gradio: модель UI, скорость сборки, требования к окружению, интеграция с API
+
+Streamlit (официальные материалы)
+03. Streamlit Docs — Quick reference (виджеты, layout, state)
+https://docs.streamlit.io/develop/quick-reference
+
+04. Streamlit Docs — API reference (полный справочник компонентов)
+https://docs.streamlit.io/develop/api-reference
+
+05. Streamlit Docs — 2026 release notes (если нужно упомянуть актуальные изменения/виджеты)
+https://docs.streamlit.io/develop/quick-reference/release-notes/2026
+
+Gradio (официальные материалы)
+06. Gradio Docs — Blocks (низкоуровневое API для сложных интерфейсов)
+https://gradio.app/docs/gradio/blocks
+
+07. Gradio Guides — Blocks and event listeners (как устроены события: click/change/submit)
+https://gradio.app/main/guides/blocks-and-event-listeners
+
+08. Gradio Guides — Controlling layout (строки/колонки/табы, организация экрана)
+https://gradio.app/main/guides/controlling-layout
+
+09. Gradio Guides — Sharing your app (share-ссылки, срок жизни, предупреждения)
+https://gradio.app/main/guides/sharing-your-app
+
+Сравнения (неофициальные, использовать осторожно)
+10. Сравнение Streamlit vs Gradio (общая рамка различий: демо vs “мини-приложение”)
+https://www.deeplearningnerds.com/streamlit-vs-gradio-choosing-the-right-tool-for-building-generative-ai-apps/
+
+---
+
+3) Критерии выбора инструмента: простота, контроль над кодом, безопасность, логирование
+
+Безопасность LLM-приложений (prompt injection и др.)
+11. OWASP Cheat Sheet — LLM Prompt Injection Prevention (понятные рекомендации)
+http://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
+
+12. OWASP — Prompt Injection (база/термины)
+https://owasp.org/www-community/attacks/PromptInjection
+
+13. OWASP — Top 10 for LLM Applications (чек-лист рисков на уровне приложения)
+https://owasp.org/www-project-top-10-for-large-language-model-applications/
+
+Секреты и доступы (чтобы не утекали ключи API)
+14. Streamlit Docs — Secrets management (как хранить ключи и не коммитить их в репозиторий)
+https://docs.streamlit.io/develop/concepts/connections/secrets-management
+
+15. Streamlit Docs — Security reminders (короткие напоминания по безопасности)
+https://docs.streamlit.io/develop/concepts/connections/security-reminders
+
+Наблюдаемость (логирование/трассировка LLM-цепочек)
+16. LangChain — LoggingCallbackHandler (пример базового логирования через callbacks)
+https://api.python.langchain.com/en/latest/langchain/callbacks/langchain.callbacks.tracers.logging.LoggingCallbackHandler.html
+
+17. LangSmith docs — evaluation/monitoring (как измерять качество и отслеживать поведение)
+https://docs.langchain.com/langsmith/evaluation
+
+---
+
+4) Каркас сгенерированного интерфейса: ввод → обработчик → вывод результата
+
+18. Gradio Guides — Blocks and event listeners (отличный источник для “каркаса”: inputs → fn → outputs)
+https://gradio.app/main/guides/blocks-and-event-listeners
+
+19. Streamlit Docs — API reference (виджеты ввода/вывода; хорош для структуры “форма → обработка → результат”)
+https://docs.streamlit.io/develop/api-reference
+
+---
+
+5) Точки интеграции с API и LLM-логикой и места для обработки ошибок
+
+OpenAI API (примерный “эталон” для раздела про интеграцию)
+20. OpenAI API — Python reference (как вызывать, какие объекты/методы)
+https://developers.openai.com/api/reference/python
+
+21. OpenAI Guides — rate limits
+https://developers.openai.com/api/docs/guides/rate-limits/
+
+22. OpenAI Cookbook — how to handle rate limits (retry/backoff)
+https://developers.openai.com/cookbook/examples/how_to_handle_rate_limits/
+
+23. OpenAI Help — error types guidance (какие бывают ошибки и как их ловить)
+https://help.openai.com/en/articles/6897213-openai-library-error-types-guidance
+
+Дополнительно про Gradio (встраивание и доступ)
+24. Gradio Guides — Sharing your app (важно проговорить, что share-ссылки публичные; для “внутренних утилит” это риск)
+https://gradio.app/main/guides/sharing-your-app
+

@@ -1,5 +1,3 @@
-Ты — code reviewer по React/TypeScript.
-
 Проведи ревью файла src/UserList.tsx.
 Проверь:
 1) корректность и устойчивость к гонкам запросов,
