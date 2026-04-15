@@ -1,0 +1,7 @@
+provider: gigachat
+model: GigaChat
+scope: GIGACHAT_API_PERS
+timeout_seconds: 30
+max_input_chars: 4000
+verify_ssl_certs: true
+
